@@ -106,6 +106,10 @@ main {
 
 #posts-principais .post .titulo {
   text-shadow: 1px 1px black;
+  opacity: 0.1;
+}
+#posts-principais .post:hover .titulo {
+  opacity: 1;
 }
 
 #posts-principais .post img {
@@ -267,16 +271,39 @@ footer .texto-rodape {
   box-shadow: none;
 }
 
-
-#voltar-topo {
-  background-color: white;
-  border-radius: 20%;
-  border: 2px solid silver;
-  font-size: 35px;
-  width: 1em;
-  height: 1em;
-  line-height: 1em;
-  text-align: center;
-  text-decoration: none;
+#tags span{
   display: inline-block;
 }
+
+#tags span:active {
+  position: relative;
+  bottom: 2px;
+  right: 2px;
+}
+
+#tags span:hover {
+  cursor: pointer;
+}
+
+#posts-principais .post{
+  position: relative;
+}
+
+#posts-principais .titulo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+
+
+}
+
+
+#voltar-topo{
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  color: orange;
+}
+
